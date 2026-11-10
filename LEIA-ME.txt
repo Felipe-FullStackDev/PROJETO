@@ -1,0 +1,25 @@
+BIOACESSO - INTERFACE HTML + BACKEND PYTHON (FLASK)
+
+INICIAR NO WINDOWS
+1. Extraia o ZIP para uma pasta local.
+2. Entre na pasta aps_biometria\\aps_biometria.
+3. Dê dois cliques em INICIAR_BIOACESSO.bat.
+4. Na primeira execução, o script cria um ambiente virtual e instala as dependências.
+5. O navegador abrirá em http://127.0.0.1:5000.
+6. Para encerrar, volte à janela preta e pressione Ctrl+C.
+
+CADASTRO E IDENTIFICAÇÃO
+- Cadastre cada pessoa com 2 a 5 imagens de referência, preferencialmente frontais e bem iluminadas.
+- O backend usa os módulos originais OpenCV, Haar Cascade e LBP do projeto.
+- A identificação compara a imagem enviada com as referências locais e aplica o limiar salvo.
+- A câmera funciona em localhost, após autorização do navegador.
+
+AVALIAÇÃO E CALIBRAÇÃO
+- Para avaliação, organize as imagens em base/teste/<id_da_pessoa>/, base/teste/desconhecido/ e base/teste/invalido/.
+- A calibração exige ao menos duas pessoas e duas imagens válidas de referência por pessoa.
+- O CSV de avaliação será salvo em saidas/avaliacao.csv.
+
+OBSERVAÇÕES
+- Use somente imagens fictícias ou com autorização explícita. Este é um protótipo acadêmico, não apropriado para decisões reais de acesso.
+- Não exponha o servidor na rede pública. O servidor inicia apenas em 127.0.0.1.
+- A instalação inicial exige internet para baixar as bibliotecas.

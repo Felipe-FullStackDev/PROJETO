@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioAcesso | Central de identificação</title>
+<style>
+:root{--navy:#153746;--teal:#167d78;--mint:#dff3ef;--bg:#f4f7f8;--ink:#203642;--muted:#71828b;--line:#e5ecef;--white:#fff;--red:#b94a48;--shadow:0 8px 28px rgba(23,55,70,.06)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,Segoe UI,Arial,sans-serif}.layout{display:flex;min-height:100vh}.sidebar{width:255px;background:var(--navy);color:#eef8f7;padding:27px 18px;display:flex;flex-direction:column;flex-shrink:0}.brand{font-size:25px;font-weight:800;letter-spacing:-1px;padding:0 12px}.brand span{color:#78d6c8}.tagline{font-size:12px;color:#b9cdd1;padding:2px 12px 24px}.nav-label{font-size:10px;letter-spacing:1.5px;color:#9fb8be;padding:12px}.nav button{display:flex;align-items:center;gap:12px;width:100%;border:0;background:transparent;color:#d7e5e7;padding:12px;border-radius:10px;text-align:left;font-size:14px;cursor:pointer;margin:3px 0}.nav button:hover,.nav button.active{background:#245363;color:white}.nav .ico{width:22px;text-align:center;font-size:17px}.side-note{margin-top:auto;border-top:1px solid #315260;padding:17px 12px 0;color:#b9cdd1;font-size:11px;line-height:1.6}.main{flex:1;min-width:0;padding:32px clamp(18px,4vw,55px);max-width:1600px;margin:0 auto;width:100%}.topline{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.eyebrow{font-size:11px;letter-spacing:1.5px;color:var(--teal);font-weight:800}.status{font-size:12px;background:#e5f4ed;color:#277553;border-radius:99px;padding:7px 12px}.hero{background:linear-gradient(115deg,#153746,#1b6b6b);color:#fff;padding:30px 34px;border-radius:18px;box-shadow:var(--shadow);margin-bottom:22px}.hero .eyebrow{color:#a9e4da}.hero h1{font-size:clamp(25px,3vw,34px);letter-spacing:-1px;margin:8px 0}.hero p{margin:0;color:#d5e8e7;max-width:680px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:18px 0 24px}.metric,.card{background:var(--white);border:1px solid var(--line);border-radius:15px;padding:20px;box-shadow:var(--shadow)}.metric small{color:var(--muted);font-weight:600}.metric strong{display:block;font-size:30px;letter-spacing:-1px;margin:6px 0;color:var(--navy)}.metric span{font-size:12px;color:var(--muted)}.columns{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}.card h2,.card h3{margin:0 0 8px;color:var(--navy)}.card p{color:var(--muted);margin:5px 0 14px}.quick{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}.quick:last-child{border:0}.quick-icon{height:40px;width:40px;border-radius:12px;background:var(--mint);display:grid;place-items:center;font-size:19px;flex-shrink:0}.quick b{display:block}.quick small{color:var(--muted)}h1.page-title{font-size:30px;letter-spacing:-.8px;margin:4px 0 5px;color:var(--navy)}.sub{color:var(--muted);margin:0 0 22px}.view{display:none}.view.active{display:block}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{margin:14px 0}.field label{display:block;font-weight:650;font-size:13px;margin-bottom:7px}.field input,.field select{width:100%;border:1px solid #d9e3e6;border-radius:10px;padding:12px 13px;font:inherit;background:#fff;color:var(--ink);outline:none}.field input:focus,.field select:focus{border-color:var(--teal);box-shadow:0 0 0 3px #167d781c}.hint{font-size:12px;color:var(--muted);margin-top:6px}.btn{border:0;border-radius:10px;background:var(--teal);color:white;font-weight:700;padding:12px 17px;cursor:pointer;font-size:14px}.btn:hover{filter:brightness(.95)}.btn.secondary{background:#eaf2f3;color:var(--navy)}.btn.danger{background:#fae9e8;color:var(--red)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.notice{padding:13px 15px;border-radius:11px;background:#edf6f5;color:#286b65;font-size:13px;margin:14px 0}.warning{background:#fff6e6;color:#8b6423}.preview{max-width:320px;max-height:260px;object-fit:contain;border-radius:12px;border:1px solid var(--line);display:none;margin-top:12px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:13px 10px;border-bottom:1px solid var(--line);font-size:13px}th{color:var(--muted);font-weight:650}.pill{display:inline-block;background:#eaf4f3;color:#276d68;padding:5px 9px;border-radius:99px;font-size:11px}.empty{text-align:center;padding:35px;color:var(--muted)}.result{margin-top:16px}.footer{text-align:center;color:#9aa8ae;font-size:11px;margin:32px 0 10px}.hidden{display:none!important}
+@media(max-width:850px){.sidebar{width:215px}.grid{grid-template-columns:1fr 1fr}.columns{grid-template-columns:1fr}}
+@media(max-width:620px){.layout{display:block}.sidebar{width:100%;padding:14px}.brand{font-size:22px}.tagline{padding-bottom:8px}.nav{display:flex;overflow:auto;gap:4px}.nav-label,.side-note{display:none}.nav button{white-space:nowrap;width:auto;padding:9px 11px;font-size:12px}.nav .ico{display:none}.main{padding:20px 14px}.grid,.form-grid{grid-template-columns:1fr}.hero{padding:23px}.topline{margin-bottom:15px}}
+</style></head>
+<body><div class="layout">
+<aside class="sidebar"><div class="brand">bio<span>acesso.</span></div><div class="tagline">Identificação biométrica facial<br>Protótipo acadêmico • APS 2026/2</div><div class="nav-label">NAVEGAÇÃO</div><nav class="nav">
+<button class="active" data-view="home"><span class="ico">⌂</span>Visão geral</button><button data-view="identify"><span class="ico">◎</span>Identificar pessoa</button><button data-view="register"><span class="ico">＋</span>Cadastrar pessoa</button><button data-view="people"><span class="ico">▤</span>Pessoas cadastradas</button><button data-view="evaluation"><span class="ico">▥</span>Avaliação do sistema</button>
+</nav><div class="side-note">Ambiente demonstrativo<br>Utilize apenas dados e imagens fictícias ou autorizadas. Não utilizar para decisões reais de acesso.</div></aside>
+<main class="main"><div class="topline"><span class="eyebrow">CENTRAL DE IDENTIFICAÇÃO</span><span class="status">● Interface em execução</span></div>
+<section class="view active" id="home"><div class="hero"><div class="eyebrow">BEM-VINDO AO BIOACESSO</div><h1>Olá! Que bom ter você por aqui.</h1><p>Explore o protótipo, cadastre perfis de demonstração e conheça as etapas de identificação facial em um ambiente simples e organizado.</p></div><div class="grid"><div class="metric"><small>Pessoas cadastradas</small><strong id="countPeople">0</strong><span>Perfis armazenados no computador</span></div><div class="metric"><small>Imagens selecionadas</small><strong id="countImages">0</strong><span>Imagens de referência cadastradas</span></div><div class="metric"><small>Ambiente</small><strong style="font-size:23px">Demonstração</strong><span>Backend Python conectado</span></div></div><div class="columns"><div class="card"><h2>Por onde começar?</h2><div class="quick"><div class="quick-icon">＋</div><div><b>Cadastre um perfil</b><small>Adicione um nome, nível de acesso e fotos de referência.</small></div></div><div class="quick"><div class="quick-icon">◎</div><div><b>Experimente a identificação</b><small>Envie uma imagem e consulte o resultado do algoritmo.</small></div></div><div class="quick"><div class="quick-icon">▤</div><div><b>Consulte os cadastros</b><small>Pesquise e gerencie os perfis armazenados pelo backend.</small></div></div></div><div class="card"><h2>Sobre o projeto</h2><p>O BioAcesso é um protótipo acadêmico para demonstrar conceitos de identificação facial e organização de níveis de acesso.</p><div class="notice warning">O navegador utiliza o backend Flask para executar o processamento facial com OpenCV e LBP. Este protótipo é acadêmico e não deve ser usado para decisões reais de acesso.</div></div></div></section>
+<section class="view" id="register"><div class="eyebrow">NOVO PERFIL</div><h1 class="page-title">Cadastrar pessoa</h1><p class="sub">Preencha os dados abaixo para criar um perfil demonstrativo.</p><div class="card"><form id="registerForm"><div class="form-grid"><div class="field"><label for="personName">Nome do perfil</label><input id="personName" required maxlength="70" placeholder="Ex.: Pessoa demonstrativa"></div><div class="field"><label for="personLevel">Nível de acesso</label><select id="personLevel"><option value="1">Nível 1 - Geral</option><option value="2">Nível 2 - Fiscalização</option><option value="3">Nível 3 - Estratégico</option></select></div></div><div class="field"><label for="personPhoto">Imagens de referência (selecione de 2 a 5 fotos)</label><input id="personPhoto" type="file" accept="image/*" multiple><div class="hint">As imagens serão enviadas ao backend Python e só serão cadastradas se o detector encontrar um rosto.</div><img id="registerPreview" class="preview" alt="Pré-visualização da imagem"></div><div class="actions"><button class="btn" type="submit">Salvar perfil demonstrativo</button><button class="btn secondary" type="reset">Limpar formulário</button></div></form><div id="registerMessage" class="result"></div></div></section>
+<section class="view" id="identify"><div class="eyebrow">RECONHECIMENTO</div><h1 class="page-title">Identificar pessoa</h1><p class="sub">Envie uma foto para executar o reconhecimento facial real (OpenCV + LBP).</p><div class="card"><div class="field"><label for="identifyPhoto">Escolha uma imagem</label><input type="file" id="identifyPhoto" accept="image/*"><img id="identifyPreview" class="preview" alt="Imagem selecionada"></div><div class="actions"><button class="btn" id="identifyButton">Analisar imagem</button><button class="btn secondary" id="cameraButton">Abrir câmera</button></div><video id="cameraVideo" class="preview" autoplay playsinline></video><canvas id="cameraCanvas" class="hidden"></canvas><div id="identifyMessage" class="result"></div><div class="notice warning">A imagem será processada pelo algoritmo do projeto. O resultado é experimental e pode conter erros.</div></div></section>
+<section class="view" id="people"><div class="eyebrow">BASE LOCAL</div><h1 class="page-title">Pessoas cadastradas</h1><p class="sub">Consulte os perfis e as imagens de referência armazenadas pelo backend.</p><div class="card"><div class="field"><label for="searchPeople">Buscar pessoa</label><input id="searchPeople" placeholder="Digite um nome..."></div><div class="table-wrap"><table><thead><tr><th>Nome</th><th>Nível</th><th>Cadastro</th><th>Ação</th></tr></thead><tbody id="peopleRows"></tbody></table></div><div id="peopleEmpty" class="empty">Nenhum perfil cadastrado ainda. Comece adicionando uma pessoa.</div></div></section>
+<section class="view" id="evaluation"><div class="eyebrow">QUALIDADE DO MODELO</div><h1 class="page-title">Avaliação do sistema</h1><p class="sub">Entenda como preparar os dados para avaliar o algoritmo original.</p><div class="card"><h2>Como funciona esta etapa?</h2><p>A avaliação compara as imagens da pasta base/teste com as referências cadastradas e calcula a taxa de acerto.</p><div class="notice warning">A avaliação agora é executada pelo backend. Coloque as imagens de teste nas pastas indicadas e clique no botão abaixo.</div><h3>Estrutura esperada dos dados</h3><pre style="background:#f4f7f8;padding:16px;border-radius:10px;overflow:auto;font-size:12px">base/\n├── referencia/\n│   ├── pessoa_01/\n│   └── pessoa_02/\n└── teste/\n    ├── pessoa_01/\n    ├── pessoa_02/\n    ├── desconhecido/\n    └── invalido/</pre><div class="actions"><button class="btn" id="evaluateButton">Executar avaliação</button><button class="btn secondary" id="calibrateButton">Calibrar limiar</button></div><div id="evaluationMessage" class="result"></div><h3>O que avaliar</h3><ul style="color:var(--muted);line-height:2"><li>Taxa de reconhecimento correto.</li><li>Falsas aceitações e falsas rejeições.</li><li>Tempo de processamento.</li><li>Comportamento com imagens sem face detectável.</li></ul></div></section>
+<div class="footer">BioAcesso · Projeto acadêmico APS 2026/2 · Protótipo demonstrativo</div>
+</main></div>
+<script>
+let cameraStream=null, sessionImages=0;
+const $=id=>document.getElementById(id);
+async function api(url, options={}) {
+  const response=await fetch(url, options);
+  let data={}; try{data=await response.json()}catch{}
+  if(!response.ok || data.ok===false) throw new Error(data.error||'Falha na comunicação com o servidor.');
+  return data;
+}
+function showMessage(id, text, type='notice'){
+  $(id).innerHTML=`<div class="notice ${type==='warning'?'warning':''}">${escapeHtml(text)}</div>`;
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function showView(name){
+ document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===name));
+ document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===name));
+ if(name==='people')renderPeople(); if(name==='home')updateMetrics();
+ if(cameraStream){cameraStream.getTracks().forEach(t=>t.stop());cameraStream=null;$('cameraVideo').style.display='none';}
+}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+async function updateMetrics(){
+ try{const d=await api('/api/status');$('countPeople').textContent=d.pessoas;$('countImages').textContent=d.referencias;}
+ catch(e){$('countPeople').textContent='—';$('countImages').textContent='—';}
+}
+$('personPhoto').addEventListener('change',()=>{
+ const files=[...$('personPhoto').files]; sessionImages=files.length;
+ if(files[0]){$('registerPreview').src=URL.createObjectURL(files[0]);$('registerPreview').style.display='block';}
+ updateMetrics();
+});
+$('identifyPhoto').addEventListener('change',()=>{
+ const f=$('identifyPhoto').files[0];if(f){$('identifyPreview').src=URL.createObjectURL(f);$('identifyPreview').style.display='block';}
+});
+$('registerForm').addEventListener('submit',async e=>{
+ e.preventDefault();const files=[...$('personPhoto').files];
+ if(!files.length){showMessage('registerMessage','Selecione pelo menos uma foto de referência.','warning');return;}
+ const form=new FormData();form.append('name',$('personName').value.trim());form.append('level',$('personLevel').value);
+ files.forEach(f=>form.append('photos',f));
+ try{
+  const d=await api('/api/people',{method:'POST',body:form});
+  showMessage('registerMessage',`${d.message} ${d.rejected?d.rejected+' imagem(ns) rejeitada(s).':''}`);
+  e.target.reset();$('registerPreview').style.display='none';sessionImages=0;await updateMetrics();
+ }catch(err){showMessage('registerMessage',err.message,'warning');}
+});
+async function renderPeople(){
+ const q=$('searchPeople').value.toLowerCase();$('peopleRows').innerHTML='';
+ try{
+  const d=await api('/api/people');const users=d.people.filter(u=>u.name.toLowerCase().includes(q));
+  users.forEach(u=>{
+   const tr=document.createElement('tr');
+   [u.name,`Nível ${u.level} - ${['','Geral','Fiscalização','Estratégico'][u.level]}`,`${u.images} imagem(ns)`].forEach(v=>{const td=document.createElement('td');td.textContent=v;tr.append(td);});
+   const action=document.createElement('td'),del=document.createElement('button');del.className='btn danger';del.textContent='Excluir';
+   del.onclick=async()=>{if(!confirm(`Excluir o cadastro de ${u.name}?`))return;try{await api('/api/people/'+encodeURIComponent(u.id),{method:'DELETE'});renderPeople();updateMetrics();}catch(e){alert(e.message)}};
+   action.append(del);tr.append(action);$('peopleRows').append(tr);
+  });
+  $('peopleEmpty').style.display=users.length?'none':'block';
+ }catch(e){showMessage('peopleEmpty',e.message,'warning');}
+}
+$('searchPeople').addEventListener('input',renderPeople);
+$('identifyButton').addEventListener('click',async()=>{
+ const file=$('identifyPhoto').files[0];if(!file){showMessage('identifyMessage','Selecione uma imagem antes de continuar.','warning');return;}
+ await identifyFile(file);
+});
+async function identifyFile(file){
+ const fd=new FormData();fd.append('photo',file,'captura.jpg');
+ $('identifyMessage').innerHTML='<div class="notice">Processando imagem e comparando com os cadastros...</div>';
+ try{
+  const d=await api('/api/identify',{method:'POST',body:fd});
+  if(d.invalid){showMessage('identifyMessage',d.message||'Nenhum rosto detectado na imagem.','warning');return;}
+  if(d.recognized){
+   let info=(d.information||[]).map(b=>`<h3>${escapeHtml(b.titulo)}</h3><ul>${b.itens.map(i=>`<li>${escapeHtml(i)}</li>`).join('')}</ul>`).join('');
+   $('identifyMessage').innerHTML=`<div class="notice"><b>Identificação encontrada: ${escapeHtml(d.name)}</b><br>${escapeHtml(d.level_name)}<br>Distância: ${Number(d.distance).toFixed(4)} · Limiar: ${Number(d.threshold).toFixed(4)}</div><div class="card result">${info}</div>`;
+  }else{
+   showMessage('identifyMessage',`Pessoa não reconhecida. Menor distância: ${d.distance==null?'—':Number(d.distance).toFixed(4)} · Limiar: ${Number(d.threshold).toFixed(4)}.`,'warning');
+  }
+ }catch(e){showMessage('identifyMessage',e.message,'warning');}
+}
+$('cameraButton').addEventListener('click',async()=>{
+ const video=$('cameraVideo');try{
+  if(!navigator.mediaDevices?.getUserMedia)throw new Error('A câmera não está disponível neste navegador.');
+  cameraStream=await navigator.mediaDevices.getUserMedia({video:true});video.srcObject=cameraStream;video.style.display='block';
+  showMessage('identifyMessage','Câmera ativada. Posicione o rosto e clique em Analisar imagem para capturar o quadro.');$('identifyButton').textContent='Capturar e identificar';
+  $('identifyButton').onclick=async()=>{
+   if(!cameraStream)return;const canvas=$('cameraCanvas');canvas.width=video.videoWidth;canvas.height=video.videoHeight;
+   canvas.getContext('2d').drawImage(video,0,0);canvas.toBlob(blob=>{if(blob)identifyFile(new File([blob],'captura.jpg',{type:'image/jpeg'}));},'image/jpeg',.92);
+  };
+ }catch(e){showMessage('identifyMessage','Não foi possível abrir a câmera: '+e.message,'warning');}
+});
+$('evaluateButton').addEventListener('click',async()=>{
+ try{const d=await api('/api/evaluate',{method:'POST'});showMessage('evaluationMessage',`Avaliação concluída: ${d.hits}/${d.total} acertos (${d.accuracy}%). Resultado salvo em ${d.csv}.`);}
+ catch(e){showMessage('evaluationMessage',e.message,'warning');}
+});
+$('calibrateButton').addEventListener('click',async()=>{
+ try{const d=await api('/api/calibrate',{method:'POST'});showMessage('evaluationMessage',`Limiar calibrado: ${d.threshold.toFixed(4)}. Média genuína: ${d.genuine_mean.toFixed(4)}; média entre pessoas diferentes: ${d.impostor_mean.toFixed(4)}.`);}
+ catch(e){showMessage('evaluationMessage',e.message,'warning');}
+});
+updateMetrics();
+</script></body></html>

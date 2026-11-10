@@ -1,0 +1,23 @@
+BIOACESSO - INTERFACE HTML
+
+COMO ABRIR:
+1. Extraia a pasta do ZIP.
+2. Entre em aps_biometria\aps_biometria.
+3. Dê dois cliques em ABRIR_INTERFACE.bat.
+   Alternativamente, dê dois cliques em index.html.
+
+A interface abre diretamente no navegador. Não precisa instalar Python,
+Streamlit ou qualquer biblioteca para visualizar e testar a navegação.
+
+O QUE FUNCIONA NESTA VERSÃO:
+- Navegação entre as telas.
+- Cadastro demonstrativo salvo no armazenamento local do navegador.
+- Pesquisa e exclusão dos perfis demonstrativos.
+- Seleção e pré-visualização de imagens.
+- Tentativa de abrir a câmera, conforme permissão do navegador.
+
+LIMITAÇÃO IMPORTANTE:
+Esta versão HTML testa a interface. O reconhecimento facial real, o processamento
+OpenCV/LBP, a calibração e a avaliação continuam nos módulos Python originais e
+precisam de uma integração com um servidor/backend para funcionar pelo navegador.
+Nenhum arquivo de imagem é enviado ou processado nesta interface independente.

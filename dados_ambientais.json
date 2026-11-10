@@ -1,0 +1,26 @@
+{
+  "1": {
+    "titulo": "Informações ambientais gerais (fictícias)",
+    "itens": [
+      "Propriedade Fazenda Boa Vista (FICT-001): 120 ha, uso agrícola",
+      "Propriedade Sítio Ribeirão (FICT-002): 35 ha, pecuária",
+      "Consulta pública fictícia nº 07/2026: uso da água na bacia do Rio Exemplo"
+    ]
+  },
+  "2": {
+    "titulo": "Relatórios de fiscalização e ocorrências (fictícios)",
+    "itens": [
+      "Relatório de fiscalização RF-2026-014: APP irregular em FICT-001",
+      "Ocorrência OC-2026-033: suspeita de contaminação por defensivo agrícola em FICT-002",
+      "Análise técnica AT-2026-009: qualidade da água - ponto P3 acima do limite"
+    ]
+  },
+  "3": {
+    "titulo": "Informações estratégicas e decisões administrativas (fictícias)",
+    "itens": [
+      "Relatório consolidado RC-2026-S2: 14 ocorrências abertas na região norte",
+      "Decisão administrativa DA-2026-005: embargo parcial de FICT-001",
+      "Plano estratégico PE-2027: priorização de fiscalização em áreas de nascentes"
+    ]
+  }
+}
